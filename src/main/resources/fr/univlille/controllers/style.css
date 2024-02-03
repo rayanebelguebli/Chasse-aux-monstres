@@ -1,0 +1,23 @@
+.body{
+    -fx-background-image: url("./nightforest.jpg");
+    -fx-background-size: 100% 100%;
+}
+
+.buttons{
+    -fx-background-color:rgba(255,255,255, 0.21);
+    -fx-border-color:black;
+    -fx-border-width: 2px;
+    -fx-effect:  dropshadow(three-pass-box, rgba(0,0,0,1), 10, 0, 0, 0);
+}
+
+.title {
+    -fx-background-color:rgba(255,255,255, 0.08);
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+}
+
+.player {
+    -fx-background-color:rgba(0, 0, 0, 0.63);
+    -fx-border-color: white;
+    -fx-border-width: 5px;
+}

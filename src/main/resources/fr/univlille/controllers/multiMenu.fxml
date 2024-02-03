@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="body" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univlille.controllers.MultiplayerMenuController">
+   <children>
+      <VBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="635.0" prefWidth="607.0" spacing="16.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="128.0" prefWidth="432.0" styleClass="title" stylesheets="@style.css" text="Chasse au monstre" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Heavy" size="35.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#localButtonPressed" prefHeight="71.0" prefWidth="584.0" styleClass="buttons" stylesheets="@style.css" text="Jouer sur une machine" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#lanButtonPressed" prefHeight="71.0" prefWidth="584.0" styleClass="buttons" stylesheets="@style.css" text="Jouer sur deux machines" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="boutonHeberger" mnemonicParsing="false" onAction="#hostButtonPressed" prefHeight="71.0" prefWidth="286.0" styleClass="buttons" stylesheets="@style.css" text="Héberger" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="boutonRejoindre" mnemonicParsing="false" onAction="#joinButtonPressed" prefHeight="71.0" prefWidth="286.0" styleClass="buttons" stylesheets="@style.css" text="Rejoindre" textFill="WHITE" visible="false">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="71.0" prefWidth="286.0" styleClass="buttons" stylesheets="@style.css" text="&lt; Retour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="32.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

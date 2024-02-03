@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" styleClass="body" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.univlille.controllers.JoinController">
+   <children>
+      <TextArea fx:id="textarea" layoutX="197.0" layoutY="468.0" prefHeight="19.0" prefWidth="559.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="423.0" layoutY="560.0" mnemonicParsing="false" onAction="#onConfirm" prefHeight="71.0" prefWidth="333.0" styleClass="buttons" stylesheets="@style.css" text="Confirmer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="197.0" layoutY="560.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="71.0" prefWidth="207.0" styleClass="buttons" stylesheets="@style.css" text="&lt; Retour" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Button>
+      <Label layoutX="197.0" layoutY="414.0" prefHeight="45.0" prefWidth="309.0" text="Nom de la machine de l'hote" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
